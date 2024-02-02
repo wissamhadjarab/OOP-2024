@@ -25,6 +25,18 @@ public class Main
 	public void doCatStuff()
 	{
 		// Put your code here
+		Cat ginger = new Cat("Ginger");
+
+		// Displaying the initial number of lives
+        System.out.println(ginger.getName() + "'s initial number of lives: " + ginger.getNumLives());
+
+		while (ginger.getNumLives() > 0) {
+            ginger.kill();
+        }
+
+        // Displaying a message when the cat is dead
+        System.out.println(ginger.getName() + " is now dead.");
+
 		System.out.println("cats are from space");
 	}
 	
@@ -60,7 +72,17 @@ public class Main
 		System.out.println(a.getName());
 		System.out.println("C: " + c.getName());
 		
+		Cat ginger = new Cat("Ginger");
 
+		// Displaying the initial number of lives
+        System.out.println(ginger.getName() + "'s initial number of lives: " + ginger.getNumLives());
+
+		while (ginger.getNumLives() > 0) {
+            ginger.kill();
+        }
+
+        // Displaying a message when the cat is dead
+        System.out.println(ginger.getName() + " is now dead.");
 
 		m.helloProcessing();
 	}
