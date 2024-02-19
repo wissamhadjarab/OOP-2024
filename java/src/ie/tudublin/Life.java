@@ -3,11 +3,14 @@ package ie.tudublin;
 import processing.core.PApplet;
 
 public class Life extends PApplet {
-
     
+    LifeBoard lifeBoard;
+    
+
     public void setup()
     {
-
+        lifeBoard = new LifeBoard(100, 100, this);
+        lifeBoard.randomize();
     }
 
     public void settings()
@@ -17,7 +20,9 @@ public class Life extends PApplet {
 
     public void draw()
     {
-
+        background(0);
+        lifeBoard.update();
+        lifeBoard.render();
     }
     
 }
