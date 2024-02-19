@@ -30,6 +30,11 @@ public class LifeBoard {
 
     public void render()
     {
+        for (int row = 0; row < rows; row ++)
+        {
+            
+
+        }//end for
         
     }
 
